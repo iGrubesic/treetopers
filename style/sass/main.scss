@@ -41,6 +41,14 @@ button {
     width: 45rem;
     height: 22rem;
     border: solid 1px $primary-color;
+    .test-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-top: 1.5rem;
+        padding-right: 0.5rem;
+        fill: $secundary-color;
+        cursor: pointer;
+         }
     p {
         display: inline-block;
         color: $secundary-color;
@@ -52,14 +60,23 @@ button {
     .time-date {
         color: $tertiary-color;
         font-size: 1.2rem;
+        display: block;
     }
     .follow-btn {
         float: right;
         text-transform: uppercase;
-        font-size: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        font-size: 1.3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         margin-top: 2rem;
+        svg {
+            height: 1.3rem;
+            width: 1.3rem;
+            padding-right: 0.5rem;
+            path {
+                fill: $primary-color;
+            }
+        }
     }
     .profile-info {
         float: left;
