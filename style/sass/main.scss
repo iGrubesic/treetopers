@@ -8,10 +8,16 @@ html {
     box-sizing: border-box;
 }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
 body {
     font-size: 1.2rem; 
     margin: 0; 
-   }
+}
 
 header {
    
@@ -62,7 +68,7 @@ header {
 }
 
 #features {
-    .text-wrapper {
+    .features-wrapper {
         text-align: center;
         h2 {
             display: inline-block;
@@ -114,6 +120,14 @@ header {
         }
     }
 }
+
+#about {
+    background-image: url('../../img/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
 button {
     outline: none;
     cursor: pointer;
