@@ -9,9 +9,111 @@ html {
 }
 
 body {
-    font-size: 1.2rem;  
+    font-size: 1.2rem; 
+    margin: 0; 
    }
 
+header {
+   
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        .logo {
+            text-transform: uppercase;
+            letter-spacing: 0.4rem;
+            display: inline-block;
+            margin-left: 4rem;
+            margin-top: 1rem;
+            color: #fff;
+            float: left;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            float: right;
+            margin-right: 4rem;
+            letter-spacing: 0.1rem;
+            font-weight: 500;
+            font-size: 1.3rem;
+            li{
+                
+                display: inline-block;
+                text-transform: uppercase;
+                
+                .active {
+                    border: 2px solid #fff;
+                    border-radius: 9.5px;
+                }
+
+               a {
+                   text-decoration: none;
+                   color: #fff;
+                   padding: 0 1rem;
+               } 
+            }
+        }
+    }
+}
+
+#intro {
+    background: black;
+    height: 500px;
+}
+
+#features {
+    .text-wrapper {
+        text-align: center;
+        h2 {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            color: $primary-color;
+        }
+        p {
+            line-height: 2rem;
+            width: 50%;
+            margin: 0 auto;
+            color: $secundary-color;
+        }
+    }
+    .col-6 {
+        width: 50%;
+        text-align: center;
+        float: left;
+        img {
+            width: 67%;
+            height: auto;
+            margin-top: 7rem;
+        }
+        .feature-blocks {
+            svg {
+                float: left;
+                height: 5rem;
+                width: 5rem;
+                path {
+                    fill: $primary-color;
+                }
+
+            }
+            h3 {
+                font-size: 2rem;
+                font-weight: 300;
+                color: $primary-color;
+                text-align: left;
+                margin-left: 7rem;
+            }
+            p {
+                line-height: 2rem;
+                color: $secundary-color; 
+                text-align: left;
+                display: block;
+                margin-left: 7rem;
+            }
+            
+        }
+    }
+}
 button {
     outline: none;
     cursor: pointer;
