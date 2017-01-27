@@ -1,5 +1,5 @@
-$primary-color: rgb(121, 83, 181);
-$secundary-color: rgb(97, 97, 97);
+$primary-color: rgb(135, 208, 204);
+$secundary-color: #fff;
 $tertiary-color: rgb(174, 174, 174);
 
 html {
@@ -8,221 +8,79 @@ html {
     box-sizing: border-box;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both; 
-}
-
 body {
     font-size: 1.2rem; 
     margin: 0; 
 }
 
 header {
-   
-    nav {
-        position: fixed;
-        width: 100%;
-        height: 50px;
-        .logo {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+    background-color: $primary-color;
+    padding-top: 3.5rem;
+    flex-direction: column;
+    .logo {
+        margin-bottom: 0;
+        margin-top: 0;
+        color: #fff;
+        margin-left: 13rem;
+        text-transform: uppercase;
+        display: inline-block;
+        float: left;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+    }
+    ul {
+        list-style-type: none;
+        float: right;
+        margin-right: 13rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 2.3rem;
+        letter-spacing: 0.2rem;
+        li {
             text-transform: uppercase;
-            letter-spacing: 0.4rem;
-            display: inline-block;
-            margin-left: 4rem;
-            margin-top: 1rem;
-            color: #fff;
             float: left;
+            margin-left: 2rem;
+            display: inline-block;
+            color: $secundary-color;
             cursor: pointer;
         }
-        ul {
-            list-style-type: none;
-            float: right;
-            margin-right: 4rem;
-            letter-spacing: 0.1rem;
-            font-weight: 500;
-            font-size: 1.3rem;
-            li{
-                
-                display: inline-block;
-                text-transform: uppercase;
-                
-                .active {
-                    border: 2px solid #fff;
-                    border-radius: 9.5px;
-                }
-
-               a {
-                   text-decoration: none;
-                   color: #fff;
-                   padding: 0 1rem;
-               } 
-            }
-        }
     }
-}
-
-#intro {
-    background: black;
-    height: 500px;
-}
-
-#features {
-    .features-wrapper {
+    .hero {
+        color: #fff;
         text-align: center;
-        h2 {
-            display: inline-block;
-            font-size: 3rem;
+        padding-top: 13rem;
+        padding-bottom: 13rem;
+        h1 {
+            padding-bottom: 4rem;
+            font-size: 5rem;
             font-weight: 300;
-            color: $primary-color;
         }
-        p {
-            line-height: 2rem;
-            width: 50%;
-            margin: 0 auto;
-            color: $secundary-color;
-        }
-    }
-    .col-6 {
-        width: 50%;
-        text-align: center;
-        float: left;
-        img {
-            width: 67%;
-            height: auto;
-            margin-top: 7rem;
-        }
-        .feature-blocks {
-            svg {
-                float: left;
-                height: 5rem;
-                width: 5rem;
-                path {
-                    fill: $primary-color;
-                }
-
-            }
-            h3 {
-                font-size: 2rem;
-                font-weight: 300;
-                color: $primary-color;
-                text-align: left;
-                margin-left: 7rem;
-            }
-            p {
-                line-height: 2rem;
-                color: $secundary-color; 
-                text-align: left;
-                display: block;
-                margin-left: 7rem;
-            }
-            
-        }
-    }
-}
-
-#about {
-    background-image: url('../../img/background.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; 
-}
-
-button {
-    outline: none;
-    cursor: pointer;
-}
-
-.btn-primary {
-   border: none;
-   padding: 2.3rem 4.1rem;
-   font-size: 1.8rem;
-   background: $primary-color;
-   color: #fff;
-   border-radius: 4.1rem;
-   text-transform: uppercase;
-}
-
-.btn-secundary {
-    border-color: $primary-color;
-    background: none;
-    padding: 1rem 3.2rem;
-    font-size: 1.4rem;
-    border-radius: 2.4rem;
-    color: $primary-color;
-}
-
-.testimonial-card {
-    padding: 3.6rem 3rem;
-    width: 45rem;
-    height: 22rem;
-    border: solid 1px $primary-color;
-    .test-icon {
-        width: 1.8rem;
-        height: 1.8rem;
-        margin-top: 1.5rem;
-        padding-right: 0.5rem;
-        fill: $secundary-color;
-        cursor: pointer;
-         }
-    p {
-        display: inline-block;
-        color: $secundary-color;
-        font-size: 1.4rem;
-        line-height: 1.9rem;
-        border-top: 1px solid $tertiary-color;
-        padding-top: 1rem;
-    }
-    .time-date {
-        color: $tertiary-color;
-        font-size: 1.2rem;
-        display: block;
-    }
-    .follow-btn {
-        float: right;
-        text-transform: uppercase;
-        font-size: 1.3rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        margin-top: 2rem;
-        svg {
-            height: 1.3rem;
-            width: 1.3rem;
-            padding-right: 0.5rem;
-            path {
-                fill: $primary-color;
-            }
-        }
-    }
-    .profile-info {
-        float: left;
-        padding-left: 2rem;
-        span {
-            display: block;
-            &:first-child {
-                font-size: 2.6rem;
-                color: $primary-color;
-                padding-top: 2rem;
-            }
-            &:last-child {
-                font-size: 2rem;
-                color: $tertiary-color;
-            }
-        }
-    }
-    .profilepic {
-        border-radius: 50%;
-        overflow: hidden;
-        width: 92px;
-        height: 92px;
-        display: inline-block;
-        float: left;
-        img {
-            width: 100%;
-            height: 100%;
+        h2 {
+            padding-bottom: 4rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 2.5rem;
         }
         
-        
+       .btn-primary {
+            border: none;
+            padding: 2.3rem 4.1rem;
+            font-size: 1.8rem;
+            background: rgb(50, 93, 255);
+            color: #fff;
+            border-radius: 4.1rem;
+            text-transform: uppercase;
+            outline: none;
+            cursor: pointer;
+            letter-spacing: 0.2rem;
+            img {
+                padding-left: 1rem;
+            }
+       }
     }
-
 }
