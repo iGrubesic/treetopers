@@ -1,6 +1,7 @@
 
 .container {
     display: flex;
+    flex-flow: row wrap;
     .item {
         flex-grow: 1;
         flex-basis: 50%;
@@ -10,7 +11,7 @@
         background-size: cover;
     }
     .col6 {
-        padding: 2rem;
+        padding: 4rem;
         box-sizing: border-box;
     }
 }

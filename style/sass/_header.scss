@@ -11,11 +11,15 @@ header {
     background-color: $primary-color;
     padding-top: 3.5rem;
     flex-direction: column;
+    nav {
+        justify-content: space-around;
+        display: flex;
+        flex-flow: row wrap;
+    }
     .logo {
         margin-bottom: 0;
         margin-top: 0;
         color: #fff;
-        margin-left: 13rem;
         text-transform: uppercase;
         display: inline-block;
         float: left;
@@ -25,15 +29,15 @@ header {
     ul {
         list-style-type: none;
         float: right;
-        margin-right: 13rem;
         margin-top: 0;
         margin-bottom: 0;
         line-height: 2.3rem;
         letter-spacing: 0.2rem;
+        padding: 0;
         li {
             text-transform: uppercase;
             float: left;
-            margin-left: 2rem;
+            padding: 0 1rem;
             display: inline-block;
             color: $secundary-color;
             cursor: pointer;
