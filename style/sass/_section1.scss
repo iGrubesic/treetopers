@@ -1,0 +1,16 @@
+
+.container {
+    display: flex;
+    .item {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+    .col6-2 {
+        background-image: url("../img/start.jpg");
+        background-size: cover;
+    }
+    .col6 {
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+}

@@ -1,6 +1,5 @@
-$primary-color: rgb(135, 208, 204);
-$secundary-color: #fff;
-$tertiary-color: rgb(174, 174, 174);
+@import 'header';
+@import 'section1'; 
 
 html {
     font-size: 62.5%;
@@ -13,74 +12,3 @@ body {
     margin: 0; 
 }
 
-header {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; 
-    background-color: $primary-color;
-    padding-top: 3.5rem;
-    flex-direction: column;
-    .logo {
-        margin-bottom: 0;
-        margin-top: 0;
-        color: #fff;
-        margin-left: 13rem;
-        text-transform: uppercase;
-        display: inline-block;
-        float: left;
-        letter-spacing: 0.1rem;
-        cursor: pointer;
-    }
-    ul {
-        list-style-type: none;
-        float: right;
-        margin-right: 13rem;
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 2.3rem;
-        letter-spacing: 0.2rem;
-        li {
-            text-transform: uppercase;
-            float: left;
-            margin-left: 2rem;
-            display: inline-block;
-            color: $secundary-color;
-            cursor: pointer;
-        }
-    }
-    .hero {
-        color: #fff;
-        text-align: center;
-        padding-top: 13rem;
-        padding-bottom: 13rem;
-        h1 {
-            padding-bottom: 4rem;
-            font-size: 5rem;
-            font-weight: 300;
-        }
-        h2 {
-            padding-bottom: 4rem;
-            font-size: 1.8rem;
-            font-weight: 300;
-            line-height: 2.5rem;
-        }
-        
-       .btn-primary {
-            border: none;
-            padding: 2.3rem 4.1rem;
-            font-size: 1.8rem;
-            background: rgb(50, 93, 255);
-            color: #fff;
-            border-radius: 4.1rem;
-            text-transform: uppercase;
-            outline: none;
-            cursor: pointer;
-            letter-spacing: 0.2rem;
-            img {
-                padding-left: 1rem;
-            }
-       }
-    }
-}
