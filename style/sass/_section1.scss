@@ -2,6 +2,16 @@
 .container {
     display: flex;
     flex-flow: row wrap;
+    h2 {
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 5rem;
+    }
+    p {
+        font-weight: 300;
+        color: #666;
+        line-height: 1.8rem;
+    }
     .item {
         flex-grow: 1;
         flex-basis: 50%;
