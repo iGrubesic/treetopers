@@ -18,6 +18,7 @@
         font-weight: 300;
         line-height: 2.5rem;
         text-align: left;
+        margin-top: 0;
     }
     .main-p {
         text-align: center;
@@ -26,6 +27,11 @@
         font-weight: 300;
         width: 100%;
     } 
+    .second-p {
+        margin: 0;
+        padding-bottom: 3rem;
+        color: #666;
+    }
     .btn-secundary {
         border: none;
         padding: 1.5rem 1.5rem;
@@ -45,6 +51,13 @@
         display: flex;
         padding: 3rem 0;
         align-items: center;
+
+        &:nth-child(even) {
+            .item2 {
+                padding-left: 0;
+                padding-right: 3rem;
+            }
+        }
     }
     .item1 {
         background-image: url("../img/start.jpg");
