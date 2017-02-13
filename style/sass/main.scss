@@ -4,15 +4,18 @@
 @import 'media';  
 @import 'videoWrapper'; 
 @import 'sectionProjects'; 
+@import 'members'; 
 
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
     font-size: 1.2rem; 
     margin: 0; 
 }
+
 
