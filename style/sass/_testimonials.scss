@@ -1,0 +1,51 @@
+.testimonials {
+    width: 100%;
+    .test-wrap {
+    width: 80%;
+    margin: 3rem 10%;
+    }
+    h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    }
+    p {
+    text-align: center;
+    color: #666;
+    font-weight: 300;
+    width: 100%;
+    }
+    q {
+    text-align: center;
+    color: #666;
+    font-weight: 300;
+    width: 100%;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    }
+    h4 {
+    text-align: center;
+    color: #666;
+    display: block;
+    }
+    .circleImg {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-image: url("../img/testImg.jpg");
+        background-size: contain;
+        margin: 4rem auto;
+    }
+    .slideDot {
+        text-align: center;
+        span {
+            font-size: 3rem;
+            color: #666;
+            font-weight: 800;
+            cursor: pointer;
+            padding: 0.2rem;
+        }
+    }
+ }
