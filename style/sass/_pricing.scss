@@ -1,0 +1,82 @@
+.pricing {
+    width: 100%;
+    .pricingWrapper {
+        width: 80%;
+        margin: 0 10%;
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: 300;
+        text-align: center;
+        width: 100%;
+    }
+    p {
+        text-align: center;
+        color: #666;
+        font-weight: 300;
+        width: 100%;
+        line-height: 1.8rem;
+    }
+    .row-cards {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tile {
+        max-width: 210px;
+        min-width: 190px;
+        min-height: 300px;
+        flex-grow: 1;
+        margin: 3rem;
+        border: solid 2px grey;
+        padding: 1 rem;
+        position: relative;
+        
+    }
+    .bg-text {
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        opacity: 0.3;
+        font-weight: 300;
+        position: absolute;
+        top: 5px;
+        direction: rtl;
+        right: 5px;
+    }
+    .value {
+        font-size: 5rem;
+        font-weight: 300;
+        color: #666;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+    ul {
+        position: absolute;
+        bottom: 7rem;
+        color: #666;
+        list-style-type: none;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        padding-left: 1rem;
+    }
+    .btn-proceed {
+        border: none;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+        background: #fff;
+        color: #666;
+        border: solid 2px #666;
+        border-radius: 4.1rem;
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer;
+        letter-spacing: 0.3rem;
+        position: absolute;
+        bottom: 2.5rem;
+        right: 1rem;
+    }
+}
