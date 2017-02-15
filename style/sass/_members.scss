@@ -32,6 +32,9 @@
         margin: 2rem;
         background: #fff;
         flex: 1;
+        &:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        }
         .profileImg {
             background-image: url("../img/profilePic.jpg");
             height: 250px;

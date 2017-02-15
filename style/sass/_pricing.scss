@@ -1,6 +1,7 @@
 .pricing {
     width: 100%;
     background-color: #F5F5F5;
+    padding-bottom: 2rem;
     .pricingWrapper {
         width: 80%;
         margin: 0 10%;
@@ -10,6 +11,8 @@
         font-weight: 300;
         text-align: center;
         width: 100%;
+        margin: 0;
+        padding: 3rem 0 2rem 0;
     }
     p {
         text-align: center;
@@ -17,6 +20,7 @@
         font-weight: 300;
         width: 100%;
         line-height: 1.8rem;
+        margin: 0;
     }
     .row-cards {
         display: flex;

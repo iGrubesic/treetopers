@@ -49,6 +49,9 @@
         margin: 3rem;
         background: #fff;
         flex-grow: 1;
+        &:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        }
     }
     .img-wrap {
         img {
