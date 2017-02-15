@@ -1,10 +1,16 @@
 .contactUs {
     background-color: #ffb4b4;
     width: 100%;
+    overflow: hidden;
+    padding: 4rem 0;
     .contactWrapper {
         width: 50%;
         margin: 2rem auto;
         background-color: #fff;
+        overflow: auto;
+        color: #666;
+        padding: 8rem 5rem;
+        box-sizing: border-box;
     }
     h2 {
         font-size: 3rem;
@@ -12,6 +18,57 @@
         text-align: center;
         width: 100%;
         margin: 0;
-        padding: 3rem 0 2rem 0;
+        padding-bottom: 2rem;
+    }
+    .row {
+        width: 100%;
+    }
+
+    .field {
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        padding: 20px;
+
+        &.half {
+            width: 50%;
+        }
+    }
+
+    input, textarea {
+        width: 100%;
+        border: none;
+        background: transparent;
+        outline: none;
+        border-bottom: 1px solid #666;
+        font-size: 1.8rem;
+        color: #666;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        &:focus {
+            border-bottom: 2px solid #ffb4b4;
+        }
+    }
+    .btnWrap {
+        text-align: center;
+    }
+    .btn-submit {
+        border: none;
+        padding: 1.3rem 1.5rem;
+        font-size: 1.2rem;
+        background: rgb(50, 93, 255);
+        color: #fff;
+        border-radius: 4.1rem;
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer;
+        letter-spacing: 0.3rem;
+        &:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        }
+        svg {
+            position: relative;
+            top: 3px;
+        }   
     }
 }
