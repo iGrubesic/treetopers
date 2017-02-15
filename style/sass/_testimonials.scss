@@ -37,6 +37,8 @@
         background-image: url("../img/testImg.jpg");
         background-size: contain;
         margin: 4rem auto;
+        border: solid 4px white;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     }
     .slideDot {
         text-align: center;

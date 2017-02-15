@@ -1,5 +1,6 @@
 .pricing {
     width: 100%;
+    background-color: #F5F5F5;
     .pricingWrapper {
         width: 80%;
         margin: 0 10%;
@@ -29,9 +30,14 @@
         min-height: 300px;
         flex-grow: 1;
         margin: 3rem;
-        border: solid 2px grey;
         padding: 1 rem;
         position: relative;
+        background-color: #fff;
+        border: solid 3px white;
+
+        &:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        }
         
     }
     .bg-text {
@@ -78,5 +84,11 @@
         position: absolute;
         bottom: 2.5rem;
         right: 1rem;
+
+        &:hover {
+            background: rgb(50, 93, 255);
+            color: #fff;
+            border: none;
+        }
     }
 }
