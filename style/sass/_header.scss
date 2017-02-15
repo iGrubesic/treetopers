@@ -71,8 +71,10 @@ header {
             outline: none;
             cursor: pointer;
             letter-spacing: 0.2rem;
-            img {
-                padding-left: 1rem;
+            svg {
+            padding-left: 1rem;
+            position: relative;
+            top: 2px;
             }
        }
     }

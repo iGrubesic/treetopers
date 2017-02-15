@@ -84,11 +84,18 @@
         position: absolute;
         bottom: 2.5rem;
         right: 1rem;
+        svg {
+            position: relative;
+            top: 3px;
+        }
 
         &:hover {
             background: rgb(50, 93, 255);
             color: #fff;
             border: none;
+            .arrow-btn {
+                fill: #fff;
+            }
         }
     }
 }

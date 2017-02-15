@@ -43,9 +43,10 @@
         outline: none;
         cursor: pointer;
          letter-spacing: 0.3rem;
-            img {
-                padding-left: 0.5rem;
-            }    
+            svg {
+                position: relative;
+                top: 3px;
+            }   
     }
     .row {
         display: flex;
